@@ -1,3 +1,237 @@
-# tugas-pak-krisna
-web cv bootstrape
-m fahri fariski 10 rpl 2
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - Fahri</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #dee0e4;
+      color: #333;
+    }
+    .cv-header {
+      background: linear-gradient(135deg, #750dfd 0%, #6610f2 100%);
+      color: white;
+      padding: 4rem 0 5rem;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border: 6px solid white;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    }
+    .section-title {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.8rem;
+      font-weight: 600;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      width: 60%;
+      height: 3px;
+      background-color: #0d6efd;
+      bottom: 0;
+      left: 0;
+      border-radius: 3px;
+    }
+    .skill-bar {
+      height: 8px;
+      background-color: #e9ecef;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 1.1rem;
+    }
+    .skill-progress {
+      height: 100%;
+      background-color: #0d6efd;
+      border-radius: 4px;
+    }
+    .card {
+      border: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    @media (max-width: 576px) {
+      .cv-header {
+        padding: 3rem 0 4rem;
+      }
+      .profile-img {
+        width: 140px;
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Hero -->
+  <header class="cv-header text-center">
+    <div class="container">
+      <img src="1.jpeg" 
+           alt="Foto Profil" class="rounded-circle profile-img mb-3">
+      <h1 class="display-5 fw-bold mb-1">Muhammad Fahri Fariski</h1>
+      <h5 class="mb-3"></h5> Kelas X - Rekayasa Perangkat Lunak</h5>
+      <p class="lead opacity-75">SMKN 64 Jakarta | 2025/2026</p>
+      
+      <div class="mt-4">
+        <a href="tel:+6281234567890" class="btn btn-light btn-sm me-2 mb-2">
+          <i class="bi bi-telephone-fill"></i> 0858-9322-196
+        </a>
+        <a href="mailto:rizky.rpl.x@gmail.com" class="btn btn-light btn-sm me-2 mb-2">
+          <i class="bi bi-envelope-fill"></i> x.rpl2.muhammadfahri@gmail.com
+        </a>
+        <a href="https://instagram.com/rizky_rpl10" target="_blank" class="btn btn-light btn-sm mb-2">
+          <i class="bi bi-instagram"></i> @fahrifrsy
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+
+    <div class="row g-5">
+
+      <!-- Kolom Kiri -->
+      <div class="col-lg-4">
+
+        <!-- Tentang Saya -->
+        <div class="mb-5">
+          <h3 class="section-title">Tentang Saya</h3>
+          <p class="text-muted">
+            Siswa kelas 10 jurusan Rekayasa Perangkat Lunak di SMKN 64 Jakarta. 
+            Antusias belajar pemrograman, pengembangan aplikasi web/mobile, dan teknologi terkini. 
+            Ingin mengasah kemampuan coding untuk menjadi programmer yang kompeten di masa depan.
+          </p>
+        </div>
+
+        <!-- Informasi Pribadi -->
+        <div class="mb-5">
+          <h3 class="section-title">Informasi</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3"><strong>TTL :</strong> Jakarta, 14 juli  2009</li>
+            <li class="mb-3"><strong>Alamat :</strong> Jl. dukuh 5 , kramatjati Jakarta Timur</li>
+            <li class="mb-3"><strong>Agama :</strong> Islam</li>
+            <li class="mb-3"><strong>Kewarganegaraan :</strong> Indonesia</li>
+          </ul>
+        </div>
+
+        <!-- Skill -->
+        <div class="mb-5">
+          <h3 class="section-title">Skill</h3>
+          
+          <div class="mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span>HTML & CSS</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span>JavaScript Dasar</span>
+              <span>65%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 65%"></div>
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span>Python Dasar</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%"></div>
+            </div>
+          </div>
+          
+          <div>
+            <div class="d-flex justify-content-between mb-1">
+              <span>Canva / Desain UI Sederhana</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Kolom Kanan -->
+      <div class="col-lg-8">
+
+        <!-- Pendidikan -->
+        <div class="mb-5">
+          <h3 class="section-title">Pendidikan</h3>
+          
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">SMKN 64 Jakarta</h5>
+              <h6 class="text-primary">Rekayasa Perangkat Lunak • 2025 – Sekarang</h6>
+              <ul class="mb-0">
+                <li>Kelas X (aktif)</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">SMPN 24 Jakarta</h5>
+              <h6 class="text-primary">2022 – 2025</h6>
+              <p class="mb-0"></p>
+            </div>
+          </div>
+          
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">SDN 04 Jakarta</h5>
+              <h6 class="text-primary">2016 – 2022</h6>
+              <p class="mb-0"></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div> <!-- row -->
+
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-0">© 2026 Fahri – CV Siswa SMK Kelas 10</p>
+  </footer>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+          crossorigin="anonymous"></script>
+</body>
+</html>
