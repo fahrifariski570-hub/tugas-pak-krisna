@@ -1,2 +1,2 @@
 # tugas-pak-krisna
-web cv bootstape
+web cv bootstrape
